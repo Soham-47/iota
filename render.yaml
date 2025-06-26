@@ -6,8 +6,8 @@ services:
     staticPublishPath: "."
     routes:
       - type: rewrite
-        source: "/*"
-        destination: "/INNOVATIA INTRO/intro.html"
+        source: "/"
+        destination: "/INNOVATIA_INTRO/intro.html"
     envVars:
       - key: NODE_VERSION
         value: "16"
