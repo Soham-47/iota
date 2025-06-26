@@ -110,8 +110,8 @@
       
       
     <div class="page1">
-      <video autoplay muted loop playsinline class="herobg">
-        <source src="videos/IOTA TRAILER 2 (1).mp4" type="video/mp4" />
+      <video autoplay muted loop playsinline class="herobg" poster="images/logo.png" id="introVideo">
+        <source data-src="videos/IOTA TRAILER 2 (1).mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       
@@ -350,6 +350,17 @@
           if (ScrollTrigger) ScrollTrigger.refresh();
         }, 1000); // Adjust delay if animation is still late
       });
+    </script>
+    
+    <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      var video = document.getElementById('introVideo');
+      var source = video.querySelector('source');
+      if (source && source.dataset.src) {
+        source.src = source.dataset.src;
+        video.load();
+      }
+    });
     </script>
     
     <script src="script.js"></script>
