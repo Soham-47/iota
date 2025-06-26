@@ -1,0 +1,16 @@
+{
+  "name": "innovatia-2025",
+  "version": "1.0.0",
+  "description": "INNOVATIA 2025 Event Website",
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "vercel": "^28.4.20"
+  },
+  "engines": {
+    "node": ">=14.x"
+  }
+}

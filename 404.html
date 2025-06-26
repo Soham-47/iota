@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+        // Get the current path and redirect to the main site with the path
+        const path = window.location.pathname.substring(1);
+        if (path) {
+            window.location.href = `/${path}.html`;
+        } else {
+            window.location.href = "/INNOVATIA INTRO/intro.html";
+        }
+    </script>
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=/INNOVATIA INTRO/intro.html">
+    </noscript>
+</head>
+<body>
+    <p>Redirecting... If you are not redirected, <a href="/INNOVATIA INTRO/intro.html">click here</a>.</p>
+</body>
+</html>

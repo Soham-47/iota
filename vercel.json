@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/home", "dest": "/HOME/home.html" },
+    { "src": "/about", "dest": "/ABOUT US/about.html" },
+    { "src": "/events", "dest": "/EVENTS (2)/events.html" },
+    { "src": "/projects", "dest": "/PROJECTS/projects.html" },
+    { "src": "/team", "dest": "/TEAM/team.html" },
+    { "src": "/lord-of-the-rings", "dest": "/Lordoftherings/iota-lord-of-the-rings-main/index.html" },
+    { "src": "/connexion", "dest": "/Connexion/connexion.html" },
+    { "src": "/(.*)", "dest": "/INNOVATIA INTRO/intro.html" }
+  ]
+}

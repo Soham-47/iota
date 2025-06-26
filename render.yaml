@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: innovatia-2025
+    env: static
+    buildCommand: ""
+    staticPublishPath: "."
+    routes:
+      - type: rewrite
+        source: "/*"
+        destination: "/INNOVATIA INTRO/intro.html"
+    envVars:
+      - key: NODE_VERSION
+        value: "16"

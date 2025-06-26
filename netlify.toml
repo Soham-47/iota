@@ -1,0 +1,76 @@
+[build]
+  publish = "."
+  command = ""
+
+# Handle SPA routing - redirect all 404s to index.html
+[[redirects]]
+  from = "/*"
+  to = "/INNOVATIA INTRO/intro.html"
+  status = 200
+
+# Specific redirects for main pages
+[[redirects]]
+  from = "/home"
+  to = "/HOME/home.html"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to = "/ABOUT US/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/events"
+  to = "/EVENTS (2)/events.html"
+  status = 200
+
+[[redirects]]
+  from = "/projects"
+  to = "/PROJECTS/projects.html"
+  status = 200
+
+[[redirects]]
+  from = "/team"
+  to = "/TEAM/team.html"
+  status = 200
+
+[[redirects]]
+  from = "/lord-of-the-rings"
+  to = "/Lordoftherings/iota-lord-of-the-rings-main/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/connexion"
+  to = "/Connexion/connexion.html"
+  status = 200
+
+# Handle direct file access with proper MIME types
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Content-Type = "text/javascript"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Content-Type = "text/css"
+
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Content-Type = "image/jpeg"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Content-Type = "image/png"
+
+[[headers]]
+  for = "/*.mp4"
+  [headers.values]
+    Content-Type = "video/mp4"
+
+[[headers]]
+  for = "/*.pdf"
+  [headers.values]
+    Content-Type = "application/pdf"
