@@ -54,20 +54,18 @@
   </nav>
   <!--###########################################################-->
   <!-- INNOVATIA Highlight -->
-  <section class="event-highlight">
-    <div class="event-container">
-      <img src="/EVENTS (2)/images/logoinnovatia.png" alt="INNOVATIA 2025" class="event-image" />
-      
-      <div class="event-text">
-        <h2>INNOVATIA 2025</h2>
-        <p>Join us for a journey through innovation, creativity, and technology.<br> Dive into competitions, exhibitions, and more!</p>
-        <a href="/INNOVATIA INTRO/intro.html">
-          <button class="event-button">About This Event</button>
-        </a>
-        
-      </div>
+  <div class="event-row right-event" id="innovatia-2025">
+    <div class="event-description translucent">
+      <h3>INNOVATIA 2025</h3>
+      <p>Join us for a journey through innovation, creativity, and technology.<br> Dive into competitions, exhibitions, and more!</p>
+      <a href="/INNOVATIA INTRO/intro.html">
+        <button class="event-button">About This Event</button>
+      </a>
     </div>
-  </section>
+    <div class="event-image">
+      <img src="/EVENTS (2)/images/logoinnovatia.png" alt="INNOVATIA 2025" />
+    </div>
+  </div>
   
 
 
@@ -84,7 +82,6 @@
     <a href="/Lordoftherings/iota-lord-of-the-rings-main/lordoftherings.html">
       <button class="event-button">About This Event</button>
     </a>
-    
   </div>
 </div>
 
@@ -167,56 +164,9 @@
     </div>
     
 </body>
-<script>
-  const navbar = document.querySelector("nav");
-
-  window.addEventListener("scroll", () => {
-    const scrollTop = window.scrollY;
-    const scrollHeight = document.body.scrollHeight - window.innerHeight;
-
-    // 0 at top, 1 at bottom
-    const scrollRatio = scrollTop / scrollHeight;
-
-    // Linearly reduce opacity and scale
-    const newOpacity = 1 - scrollRatio;
-    const newScale = 1 - (scrollRatio * 0.1); // scales down to 0.9
-
-    navbar.style.opacity = newOpacity < 0 ? 0 : newOpacity;
-    navbar.style.transform = `scale(${newScale < 0.9 ? 0.9 : newScale})`;
-  });
-</script>
-<script>
-  gsap.registerPlugin(ScrollTrigger);
-
-  // LORD OF THE RINGS - fade in from left
-  gsap.from("#lotr-desc", {
-    scrollTrigger: {
-      trigger: "#lotr-desc",
-      start: "top 80%",
-      toggleActions: "play none none none"
-    },
-    x: -100,
-    opacity: 0,
-    duration: 1.2,
-    ease: "power3.out"
-  });
-
-  // CONNEXION - fade in from right
-  gsap.from("#connexion-desc", {
-    scrollTrigger: {
-      trigger: "#connexion-desc",
-      start: "top 80%",
-      toggleActions: "play none none none"
-    },
-    x: 100,
-    opacity: 0,
-    duration: 1.2,
-    ease: "power3.out"
-  });
-</script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="/EVENTS (2)/script.js "></script>
+<script src="/EVENTS (2)/script.js"></script>
 
 </html>
