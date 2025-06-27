@@ -68,12 +68,10 @@ nav .routes a {
   color: white;
   text-decoration: none;
   
-  transition: all 0.3s ease-in-out;
 }
 
 nav .routes a:hover {
   color: gold;
-  transform: scale(1.05);
 }
 .part1{
     width: 100%;
@@ -133,13 +131,13 @@ nav .routes a:hover {
   height: auto;
   object-fit: contain; /* ✅ Prevents cropping */
   border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .event-image:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
 }
 .event-text {
   position: absolute; /* ✅ Overlay text over image */
@@ -177,11 +175,9 @@ nav .routes a:hover {
   padding: 1.5rem 2rem;
   border-radius: 15px;
   max-width: 60%;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .event-info:hover {
-  transform: translateY(-5px) scale(1.02);
   box-shadow: 0 12px 30px rgba(255, 215, 0, 0.3);
 }
 
@@ -298,8 +294,6 @@ nav .routes a:hover {
 .events2-1:hover {
     opacity: 0.75;
     box-shadow: 0 8px 32px rgba(0,0,0,0.25);
-    transform: translateY(6px) scale(1.03);
-    transition: box-shadow 0.3s, transform 0.3s;
 }
 .events2-1 {
     width: 33%;
@@ -358,7 +352,6 @@ nav .routes a:hover {
 .events1 button:hover,
 .events2 button:hover {
     background:transparent;
-    transform: translateY(-3px) scale(1.04);
     box-shadow: 0 4px 16px rgba(0,0,0,0.18);
     cursor: pointer;
 }
@@ -700,7 +693,7 @@ nav .routes a:hover {
 
 .right-event .event-description p {
   font-size: 1rem;
-  color: #444;
+  color: #979595; /* Lighter color for better contrast */
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
@@ -717,21 +710,18 @@ nav .routes a:hover {
   box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.3),
               inset 0 -2px 4px rgba(0, 0, 0, 0.3),
               0 4px 8px rgba(0, 0, 0, 0.4);
-  transition: all 0.3s ease;
   cursor: pointer;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
 }
 
 .right-event .event-button:hover {
   background: linear-gradient(to bottom, #00e1ff, #007db8);
-  transform: translateY(-2px);
   box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.4),
               inset 0 -2px 4px rgba(0, 0, 0, 0.4),
               0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 .right-event .event-button:active {
-  transform: translateY(2px);
   box-shadow: inset 0 2px 5px rgba(0,0,0,0.5);
 }
 @media (max-width: 768px) {
@@ -771,10 +761,7 @@ nav .routes a:hover {
     margin-bottom: 1rem;
   }
   
-  .event-description p {
-    font-size: 1rem;
-    color: #444;
-  }
+
   .event-description {
     flex: 1;
     text-align: left;
@@ -836,7 +823,7 @@ nav .routes a:hover {
   
   .event-description p {
     font-size: 1rem;
-    color: #444;
+    color: #979595; /* Lighter color for better contrast */
     line-height: 1.6;
     margin-bottom: 1.5rem;
   }
@@ -862,11 +849,22 @@ nav .routes a:hover {
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease;
   }
   .event-description.translucent:hover {
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
   }
+
+#innovatia-2025 {
+  margin-top: 8rem;
+  margin-bottom: 14rem;
+}
+
+/* Highlight Innovatia Event */
+#innovatia-2025 .event-image {
+  max-width: 550px; /* Larger than the default 400px */
+  scale: 1.6;
+}
     
   
   
